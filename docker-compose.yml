@@ -10,6 +10,13 @@ redis:
   ports:
     - "6379:6379"
 
+sidekiq:
+  build: .
+  command: bundle exec sidekiq
+  links:
+    - db
+    - redis
+
 web:
   build: .
   command: bundle exec rails s -b 0.0.0.0
