@@ -42,6 +42,10 @@ gem 'dotenv-rails', :groups => [:development, :test]
 # Allows Rails to work in our containerized environment
 gem 'rails_12factor'
 
+# Gotta Queueueueue
+gem 'sidekiq'
+gem 'sidetiq'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
